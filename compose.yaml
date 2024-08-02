@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  frontend:
+    image: httpd
+    ports: 
+      - 4000:4000
+  
+  backend:
+    image: mariadb
+    ports:
+      - 5000:5000
+  
+  flask:
+    image: my_flask_app
+    ports:
+      - 5000:500
+    
